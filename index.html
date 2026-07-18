@@ -32,6 +32,24 @@ body{
     background-size:400% 400%;
     animation:bgChange 12s ease infinite;
 } 
+    .balloon{
+position:absolute;
+bottom:-100px;
+width:60px;
+height:80px;
+border-radius:50%;
+animation:float 10s linear infinite;
+}
+
+.balloon:after{
+content:"";
+position:absolute;
+width:2px;
+height:70px;
+background:white;
+left:50%;
+top:80px;
+}
 <body>
 
 <!-- Your website content -->
@@ -337,6 +355,11 @@ Blow Candle 🕯️
     </div>
 
 </div>
+    <div class="balloon" style="left:10%;background:red;"></div>
+<div class="balloon" style="left:30%;background:yellow;animation-delay:2s"></div>
+<div class="balloon" style="left:50%;background:cyan;animation-delay:4s"></div>
+<div class="balloon" style="left:70%;background:lime;animation-delay:1s"></div>
+<div class="balloon" style="left:90%;background:pink;animation-delay:3s"></div>
 
 <script>
 
